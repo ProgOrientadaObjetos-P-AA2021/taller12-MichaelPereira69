@@ -52,20 +52,6 @@ public class EstudianteDistanciaTest {
                 ns2.toArray());
 
     }
-
-    /**
-     * Test of obtenerNotas method, of class EstudianteDistancia.
-     */
-    /**
-    @Test
-    public void testObtenerNotas() {
-        System.out.println("obtenerNotas");
-        ArrayList<Nota> ns = null;
-        instance.obtenerNotas();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    **/
     
     @Test
     public void testEstablecerMejorNota() throws
@@ -85,9 +71,7 @@ public class EstudianteDistanciaTest {
     }
     
 
-    /**
-     * Test of obtenerMejorNota method, of class EstudianteDistancia.
-     */
+  
     @Test
     public void testObtenerMejorNota() {
         System.out.println("obtenerMejorNota");
@@ -119,11 +103,7 @@ public class EstudianteDistanciaTest {
         Field field = instance.getClass().getDeclaredField("peorNota");
         field.setAccessible(true);
         assertEquals(5.0, field.get(instance));
-    }
-
-    /**
-     * Test of obtenerPeorNota method, of class EstudianteDistancia.
-     */
+  }
     @Test
     public void testObtenerPeorNota() {
         System.out.println("obtenerPeorNota");
@@ -157,9 +137,6 @@ public class EstudianteDistanciaTest {
         assertEquals( 7.0, field.get(instance));
     }
 
-    /**
-     * Test of obtenerMejorPromedio method, of class EstudianteDistancia.
-     */
     @Test
     public void testObtenerMejorPromedio() {
         System.out.println("obtenerMejorPromedio");
@@ -175,9 +152,7 @@ public class EstudianteDistanciaTest {
         assertEquals(expResult, result, 7.0);
     }
 
-    /**
-     * Test of toString method, of class EstudianteDistancia.
-     */
+  
     @Test
     public void testToString() {
         System.out.println("toString");
